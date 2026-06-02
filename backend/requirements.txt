@@ -1,0 +1,53 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+pydantic==2.7.1
+pydantic-settings==2.2.1
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+
+# ML / model
+tensorflow==2.15.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+keras-tuner==1.4.7
+
+# XAI
+lime==0.2.0.1
+shap==0.45.1
+
+# Cheminformatics
+rdkit==2024.3.1
+pubchempy==1.0.4
+biopython==1.83
+
+# Plotting (server-side → base64)
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.21.0
+
+# Async tasks
+celery==5.4.0
+redis==5.0.4
+
+# Utilities
+python-dotenv==1.0.1
+slowapi==0.1.9
+httpx==0.27.0
+openpyxl>=3.1.0
+
+# GNN — PyTorch CPU (GPU gerekmez)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0
+torch-geometric==2.5.3
+torchdiffeq==0.2.3
+
+# GAN — Synthetic Data Vault
+sdv==1.12.1
+
+# XAI — Geodesic Entropic Manifold Explainability
+gemex==1.2.2
