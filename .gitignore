@@ -1,4 +1,4 @@
-# ── Python ───────────────────────────────────────────────
+# ── Python ────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
@@ -12,42 +12,62 @@ build/
 .mypy_cache/
 .ruff_cache/
 
-# ── Virtual environments ──────────────────────────────────
+# ── Virtual environments ───────────────────────────────────────────────
 venv/
 .venv/
 env/
 .env/
 
-# ── Environment & secrets ─────────────────────────────────
+# ── Secrets & environment ──────────────────────────────────────────────
 .env
 backend/.env
 *.env.local
 *.env.production
-secrets/
 
-# ── Model dosyaları ──
-backend/data/models/*.h5
-backend/data/models/*.pth
-backend/data/models/*.pkl
-backend/data/models/*.json
+# ── Database ───────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+backend/sting.db
+
+# ── Model dosyaları (büyük binary) ────────────────────────────────────
+*.h5
+*.pth
+*.pkl
+*.pt
+
+# alldrugs_gnn_scaler.json repoya dahil — istisna
 !backend/data/models/alldrugs_gnn_scaler.json
-backend/data/models/*.csv
 
-# ── GA / GAN veri havuzları ───────────────────────────────
+# ── Runtime veri klasörleri ────────────────────────────────────────────
 backend/data/ga_results/
+backend/data/gnn_results/
+backend/data/gnn_training_pool/
 backend/data/gan_training_pool/
-backend/data/gnn_pool/
+backend/data/gan_v2_results/
+backend/data/gan_v2_training/
+backend/data/ode_results/
+backend/data/results/
+backend/data/training_runs/
+backend/models/
 
-# ── Yüklenen kullanıcı dosyaları ─────────────────────────
-backend/data/uploads/
-backend/data/temp/
+# ── Kök dizindeki geçici/test dosyaları ───────────────────────────────
+/*.h5
+/*.pth
+/*.pkl
+/*.csv
+/*.txt
+!ligands.txt
+!proteins.txt
+_deployda_kullanildi/
+deneme.pkl
 
-# ── Log dosyaları ─────────────────────────────────────────
+# ── Log dosyaları ──────────────────────────────────────────────────────
 *.log
 logs/
 backend/logs/
 
-# ── Node / Frontend ───────────────────────────────────────
+# ── Node / Frontend ────────────────────────────────────────────────────
 node_modules/
 frontend/node_modules/
 frontend/dist/
@@ -55,12 +75,12 @@ frontend/build/
 frontend/.vite/
 .npm/
 
-# ── Docker volumes & runtime ──────────────────────────────
+# ── Docker volumes & runtime ───────────────────────────────────────────
 docker/volumes/
 docker/data/
 *.pid
 
-# ── IDE & OS ──────────────────────────────────────────────
+# ── IDE & OS ───────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
@@ -68,11 +88,11 @@ docker/data/
 .DS_Store
 Thumbs.db
 
-# ── Jupyter ───────────────────────────────────────────────
+# ── Jupyter ────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
 *.ipynb
 
-# ── Test & coverage ───────────────────────────────────────
+# ── Test & coverage ────────────────────────────────────────────────────
 .coverage
 htmlcov/
 coverage.xml
