@@ -246,7 +246,7 @@ backend/data/models/
 └── synthetic_drug10.csv               # Reference cohort CSV
 ```
 
-> Model files are not included in this repository due to size. Contact the PI or open an issue to request access.
+> Model files are not included in this repository. Contact the PI if you want to use them.
 
 ### 3. Launch
 
